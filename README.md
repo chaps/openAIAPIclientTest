@@ -70,7 +70,7 @@ export OPENAI_API_KEY="your_api_key"
 ## Results:
 
 Example Results from running POM `createPOMClassJava`and `createPOMClassJavascript` scripts:
-![screenshot](images/resultPOMcypress.png)
+![screenshot](images/resultPOMCypress.png)
 ![screenshot](images/resultPOMJava.png)
  
 ## Adding new scripts:
