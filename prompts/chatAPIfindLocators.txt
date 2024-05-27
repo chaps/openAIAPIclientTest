@@ -1,0 +1,6 @@
+return the required selector strategy strings for the following elements using selector best practices like using unique ids:
+- login text input
+- password text input
+- login submit button 
+Return each answer in a new line with the format element_name: element_selector_string
+Given the following HTML DOM contents:

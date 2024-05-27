@@ -1,0 +1,3 @@
+login text input: #login-username
+password text input: #login-password
+login submit button: .login

@@ -1,0 +1,4 @@
+Build a class file for a javascript cypress project locating the following elements using selector best practices like using unique ids: login text input AND password text input AND login submit button 
+and adding methods for common interactions with this form
+Return only the raw code portion with no output Markdown formatting so that it could be copy and pasted
+Given the following HTML DOM contents:

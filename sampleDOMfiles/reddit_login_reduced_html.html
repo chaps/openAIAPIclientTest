@@ -1,0 +1,110 @@
+<auth-flow-modal class="shadow-sm" pagename="login_username_and_password" style="padding-bottom: 0px;">
+    <faceplate-tracker slot="closeButton" source="onboarding" action="dismiss" noun="login_username_and_password">
+<button rpl="" aria-label="Close" class="
+button-small px-[var(--rem6)]
+button-secondary
+
+
+icon
+items-center justify-center
+button inline-flex " type="button">
+<span class="flex items-center justify-center">
+<span class="flex"><svg rpl="" fill="currentColor" height="16" icon-name="close-outline" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+<path d="m18.442 2.442-.884-.884L10 9.116 2.442 1.558l-.884.884L9.116 10l-7.558 7.558.884.884L10 10.884l7.558 7.558.884-.884L10.884 10l7.558-7.558Z"></path>
+</svg></span>
+
+</span>
+<faceplate-screen-reader-content>close</faceplate-screen-reader-content>
+</button>
+<!----></faceplate-tracker>
+    
+<div class="font-sans bg-ui-modalbackground pb-[env(safe-area-inset-bottom)]">
+
+<h1 class="text-24 mt-0 mb-xs font-bold text-neutral-content-strong">
+Log In
+</h1>
+<p class="text-14 my-xs">
+By continuing, you agree to our
+<a class="text-[color:var(--color-a-default)] no-underline" target="_blank" href="https://www.redditinc.com/policies/user-agreement">User Agreement</a>
+and acknowledge that you understand the
+<a class="text-[color:var(--color-a-default)] no-underline" target="_blank" href="https://www.redditinc.com/policies/privacy-policy">Privacy Policy</a>.
+</p>
+<div class="mt-md text-center w-100 box-border">
+
+
+<auth-flow-sso-buttons locale="en-US" auth-flow="login" captcha-action="login_with_external_identity" site-key="6LcZL1spAAAAAIzQl_DXGakd-J2uwjnfZas9G-Rj" render-string="6LcZL1spAAAAAIzQl_DXGakd-J2uwjnfZas9G-Rj">
+<slot slot="googleid-signin" name="googleid-signin"></slot> <slot slot="appleid-signin" name="appleid-signin"></slot> 
+<slot slot="auth-flow-sso-buttons-captcha-element-d07d4078-8c9e-4dee-93ca-55f42eb69466" name="auth-flow-sso-buttons-captcha-element-d07d4078-8c9e-4dee-93ca-55f42eb69466"></slot></auth-flow-sso-buttons>
+
+<div class="flex items-center my-md">
+<hr class="h-px grow bg-neutral-content-disabled border-none m-0">
+
+<span class="text-12 text-neutral-content-weak px-md">
+OR
+</span>
+
+<hr class="h-px grow bg-neutral-content-disabled border-none m-0">
+</div>
+
+</div>
+
+<fieldset class="relative mt-0 mb-0 ml-0 mr-0 p-0 border-0 flex flex-col flex-grow">
+
+<auth-text-input id="login-username" name="username" autocomplete="username" required="" helper-text-placeholder="&nbsp;" aria-disabled="false" helper-text-aria-live="polite" appearance="secondary" faceplate-validity="invalid">
+<span slot="label">
+Email or username
+</span>
+<slot slot="login-username" name="login-username"></slot>
+</auth-text-input>
+
+</fieldset>
+
+
+<fieldset class="relative mt-0 mb-0 ml-0 mr-0 p-0 border-0 flex flex-col flex-grow">
+
+<auth-text-input id="login-password" name="password" type="password" autocomplete="current-password" helper-text-placeholder="&nbsp;" required="" aria-disabled="false" helper-text-aria-live="polite" appearance="secondary" faceplate-validity="invalid">
+<span slot="label">
+Password
+</span>
+<slot slot="login-password" name="login-password"></slot>
+</auth-text-input>
+
+</fieldset>
+
+<div class="mt-2xs text-14">
+<auth-flow-link step="password" hide-underline="" large-text="" has-regular-font="">
+<faceplate-tracker source="login" action="click" noun="forgot_password">
+  Forgot password?
+<!----></faceplate-tracker>
+</auth-flow-link>
+</div>
+<div class="lg:mt-sm mt-md text-14">
+
+  New to Reddit?
+  <auth-flow-link step="register" hide-underline="" large-text="" has-regular-font="">
+    Sign Up
+  </auth-flow-link>
+
+</div>
+
+</div>
+<div slot="primaryButton" class="w-100">
+<faceplate-tracker data-faceplate-tracking-context="{&quot;popup&quot;:{&quot;button_text&quot;:&quot;login&quot;}}" source="onboarding" action="click" noun="login">
+<button rpl="" disabled="" class="login w-100
+button-large px-[var(--rem14)]
+button-brand
+
+
+
+items-center justify-center
+button inline-flex " type="button">
+<span class="flex items-center justify-center">
+
+<span class="flex items-center gap-xs">Log In</span>
+</span>
+
+</button>
+<!----></faceplate-tracker>
+</div>
+
+  </auth-flow-modal>

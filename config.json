@@ -1,0 +1,34 @@
+{
+    "chatAPI": {
+        "findLocators": {
+            "DOMsourcePath": "./sampleDOMfiles/reddit_login_reduced_html.html",
+            "promptPath": "./prompts/chatAPIfindLocators.txt",
+            "systemContent": "You are an experienced SET engineer with over 10 years of experience that follows the best practices and standards",
+            "model": "gpt-3.5-turbo",
+            "outputPath": "./openAIAnswers/chatAPI/findLocators.txt"
+        },
+        "findLocatorsFailExample": {
+            "DOMsourcePath": "./sampleDOMfiles/reddit_login_html_source.html",
+            "promptPath": "./prompts/chatAPIfindLocators.txt",
+            "systemContent": "You are an experienced SET engineer with over 10 years of experience that follows the best practices and standards",
+            "model": "gpt-4o",
+            "outputPath": "./openAIAnswers/chatAPI/findLocators.txt"
+        },
+        "createPOMClassJava": {
+            "DOMsourcePath": "./sampleDOMfiles/reddit_login_reduced_html.html",
+            "promptPath": "./prompts/chatAPIcreatePOMClassJava.txt",
+            "systemContent": "You are an experienced SET engineer with over 10 years of experience that follows the best practices and standards",
+            "model": "gpt-3.5-turbo",
+            "outputPath": "./openAIAnswers/chatAPI/LoginPage.java"
+        },
+        "createPOMClassJavascript": {
+            "DOMsourcePath": "./sampleDOMfiles/reddit_login_reduced_html.html",
+            "promptPath": "./prompts/chatAPIcreatePOMClassCypress.txt",
+            "systemContent": "You are an experienced SET engineer with over 10 years of experience that follows the best practices and standards",
+            "model": "gpt-3.5-turbo",
+            "outputPath": "./openAIAnswers/chatAPI/loginPage.js"
+        }
+    }
+    
+
+}
