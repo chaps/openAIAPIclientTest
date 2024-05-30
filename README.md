@@ -67,12 +67,6 @@ if you have trouble with the OpenAPI env var, try setting it in your terminal se
 export OPENAI_API_KEY="your_api_key"
 ```
 
-## Results:
-
-Example Results from running POM `createPOMClassJava`and `createPOMClassJavascript` scripts:
-![screenshot](images/resultPOMCypress.png)
-![screenshot](images/resultPOMJava.png)
- 
 ## Adding new scripts:
 
 - Copy one of the entries from  `config.json` and add it at in `config.json` and save edit.
